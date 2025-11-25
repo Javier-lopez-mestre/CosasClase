@@ -1,0 +1,66 @@
+html {
+  background-color: #7ac8ff;
+  background-image: linear-gradient(#57a5ff, #66bfff);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+p {
+  text-align: center; 
+  font-size: 2em;
+}
+.nubol {
+  position: absolute;
+  background-image: url(https://moodle.ieti.site/pluginfile.php/807/mod_page/content/9/nube.png);
+  background-size: cover;
+}
+.nubol1 {
+  top: 70px;
+  left: 25%;
+  width: 300px;
+  height: 180px;
+  z-index: -1;
+  animation: cloud1 10s ease-in infinite normal;
+}
+
+.lluvia {
+    position: absolute;
+    background-image: url(https://www.nicepng.com/png/full/131-1316640_dibujo-gotas-de-lluvia.png);
+    background-size: cover;
+    top: 250px;
+    left: 25%;
+    width: 300px;
+    height: 180px;
+    z-index: -1;
+    animation: lluvia1 10s ease-in infinite normal;
+}
+
+.planta {
+    position: absolute;
+    background-image: url(https://moodle.ieti.site/pluginfile.php/807/mod_page/content/9/planta.png);
+    background-size: cover;
+    top: 90%;
+    left: 80%;
+    width: 150px;
+    height: 100px;
+    z-index: -1;
+    animation: planta1 5s ease-in infinite normal 5s;
+}
+
+@keyframes cloud1 {
+    0% { left: -300px; }
+   50% { left: 80%; }
+   100% { left: 80%; }
+}
+
+@keyframes lluvia1 {
+    0% { left: -300px; top: 250px; }
+    50% { left: 80%; top: 250px; }
+   100% { left: 80%; top: 600px; }
+}
+
+@keyframes planta1 {
+    0% { top: 100%; }
+   50% { top: 50%; }
+   100% { top: 100%; }
+}
